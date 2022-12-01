@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+input=$1
+
+AOC_COOKIE=`cat .cookie`
+
+if [ -z "$input" ]; then
+	echo "Please provide an argument"
+	exit 1
+fi
+
+FILE="app/Day${input}.hs"
+if [[ -f "$FILE" ]]; then
+    echo "Day $input already exists!"
+	exit 1
+fi
+
+package_input="\ \ day${input}:\n    main: Day${input}.hs\n    \<\<: \*exe-defaults"
+
+sed -i "/^executables:/a $package_input" package.yaml
+
+target_input="inputs/day${input}.txt"
+url="https://adventofcode.com/2022/day/${input}/input"
+curl -o $target_input -b "$AOC_COOKIE" $url
+
+echo "module Main where
+
+import Lib
+
+solve1 :: [String] -> Int
+solve1 = undefined
+
+solve2 :: [String] -> Int
+solve2 = solve1
+
+main :: IO()
+main = mainWrapper \"day${input}\" solve1 solve2" >> $FILE

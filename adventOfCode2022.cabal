@@ -1,0 +1,115 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.5.
+--
+-- see: https://github.com/sol/hpack
+
+name:           adventOfCode2022
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/pepijno/adventOfCode2022#readme>
+homepage:       https://github.com/pepijno/adventOfCode2022#readme
+bug-reports:    https://github.com/pepijno/adventOfCode2022/issues
+author:         pepijno
+maintainer:     pepijno
+copyright:      2022 pepijno
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/pepijno/adventOfCode2022
+
+library
+  exposed-modules:
+      Grid
+      Lib
+      Parser
+  other-modules:
+      Paths_adventOfCode2022
+  hs-source-dirs:
+      src
+  default-extensions:
+      TypeApplications
+      LambdaCase
+      FlexibleContexts
+      TupleSections
+  build-depends:
+      adjunctions
+    , array
+    , base >=4.7 && <5
+    , comonad
+    , containers
+    , distributive
+    , extra
+    , hashable
+    , mtl
+    , multiset
+    , parsec
+    , pqueue
+    , split
+    , timeit
+    , vector
+  default-language: Haskell2010
+
+executable day1
+  main-is: Day1.hs
+  hs-source-dirs:
+      app
+  default-extensions:
+      TypeApplications
+      LambdaCase
+      FlexibleContexts
+      TupleSections
+  ghc-options: -O2 -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      adjunctions
+    , adventOfCode2022
+    , array
+    , base >=4.7 && <5
+    , comonad
+    , containers
+    , distributive
+    , extra
+    , hashable
+    , mtl
+    , multiset
+    , parsec
+    , pqueue
+    , split
+    , timeit
+    , vector
+  default-language: Haskell2010
+
+test-suite adventOfCode2022-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  hs-source-dirs:
+      test
+  default-extensions:
+      TypeApplications
+      LambdaCase
+      FlexibleContexts
+      TupleSections
+  ghc-options: -O2 -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      adjunctions
+    , adventOfCode2022
+    , array
+    , base >=4.7 && <5
+    , comonad
+    , containers
+    , distributive
+    , extra
+    , hashable
+    , mtl
+    , multiset
+    , parsec
+    , pqueue
+    , split
+    , timeit
+    , vector
+  default-language: Haskell2010
