@@ -32,5 +32,5 @@ calculateScore' _ = 0
 solve2 :: [String] -> Int
 solve2 = sum . map calculateScore'
 
-main :: IO()
+main :: IO ()
 main = mainWrapper "day2" solve1 solve2
