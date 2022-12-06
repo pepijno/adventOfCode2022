@@ -12,6 +12,7 @@
         pkgs = nixpkgs.legacyPackages."${system}";
 
         buildInputs = with pkgs; [
+          ghc
           stack
           haskell-language-server
         ];
