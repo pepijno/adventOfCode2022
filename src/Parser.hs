@@ -139,7 +139,7 @@ string :: String -> Parser String
 string = traverse char
 
 stringLiteral :: Parser String
-stringLiteral = munch1 isAlphaNum
+stringLiteral = munch1 isPrint
 
 natural :: Parser Int
 natural = read <$> munch1 isDigit
