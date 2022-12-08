@@ -21,7 +21,7 @@ data Dir8 = N | NE | E | SE | S | SW | W | NW deriving (Show, Eq, Enum, Ord, Bou
 (!*) i (x, y) = (i * x, i * y)
 
 dir4, dir8 :: [(Int, Int)]
-dir4 = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+dir4 = [(0, 1), (1, 0), (0, -1), (-1, 0)]
 dir8 = [(-1, 0), (-1, 1), (0, 1), (1, 1), (1, 0), (1, -1), (0, -1), (-1, -1)]
 
 enumerate :: forall a . (Bounded a, Enum a) => [a]

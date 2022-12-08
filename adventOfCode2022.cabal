@@ -258,6 +258,35 @@ executable day7
     , vector
   default-language: Haskell2010
 
+executable day8
+  main-is: Day8.hs
+  hs-source-dirs:
+      app
+  default-extensions:
+      TypeApplications
+      LambdaCase
+      FlexibleContexts
+      TupleSections
+  ghc-options: -O2 -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      adjunctions
+    , adventOfCode2022
+    , array
+    , base >=4.7 && <5
+    , comonad
+    , containers
+    , distributive
+    , extra
+    , hashable
+    , mtl
+    , multiset
+    , parsec
+    , pqueue
+    , split
+    , timeit
+    , vector
+  default-language: Haskell2010
+
 test-suite adventOfCode2022-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
