@@ -57,3 +57,6 @@ rotate90Clockwise (a, b) = (b, (-1) * a)
 
 rotate90CounterClockwise :: Coord -> Coord
 rotate90CounterClockwise (a, b) = ((-1) * b, a)
+
+touching :: Coord -> Coord -> Bool
+touching (a, b) (x, y) = abs (a - x) <= 1 && abs (b - y) <= 1

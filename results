@@ -1,12 +1,12 @@
 
 day1:
 69883
-CPU time:   0.04s
+CPU time:   0.01s
 207576
-CPU time:   0.06s
+CPU time:   0.01s
 day2:
 13009
-CPU time:   0.06s
+CPU time:   0.00s
 10398
 CPU time:   0.00s
 day3:
@@ -18,7 +18,7 @@ day4:
 503
 CPU time:   0.04s
 827
-CPU time:   0.01s
+CPU time:   0.05s
 day5:
 "WSFTMRHPP"
 CPU time:   0.02s
@@ -28,10 +28,10 @@ day6:
 1300
 CPU time:   0.00s
 3986
-CPU time:   0.01s
+CPU time:   0.10s
 day7:
 1642503
-CPU time:   0.10s
+CPU time:   0.11s
 6999588
 CPU time:   0.08s
 day8:
@@ -39,3 +39,8 @@ day8:
 CPU time:   0.05s
 444528
 CPU time:   0.05s
+day9:
+6037
+CPU time:   0.10s
+2485
+CPU time:   0.36s
