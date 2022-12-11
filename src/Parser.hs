@@ -36,7 +36,7 @@ import Data.List
 
 newtype Parser a = Parser {parse :: String -> [(a, String)]}
 
-unsafeParse :: (Show a) => Parser a -> String -> a
+unsafeParse :: Parser a -> String -> a
 unsafeParse p s = case parse p s of
   [] -> error ("Unable to parse \"" ++ s ++ "\".")
   r -> fst $ minimumBy (compare `on` snd) r
