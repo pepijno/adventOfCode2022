@@ -1,10 +1,10 @@
 module Main where
 
-import Lib
-import Parser
-import Grid
 import Data.List
 import qualified Data.Set as S
+import Grid
+import Lib
+import Parser
 
 parseCommand :: Parser [Dir4]
 parseCommand = do
@@ -34,18 +34,18 @@ getTails :: [Coord] -> [[Coord]]
 getTails = iterate (scanl updateTail (0, 0))
 
 solve1 :: [String] -> Int
-solve1 xs = length $ nub $ (tails !! 1)
+solve1 xs = length $ nub (tails !! 1)
   where
     dirs = concatMap (unsafeParse parseCommand) xs
     hs = getHeads dirs
     tails = getTails hs
 
 solve2 :: [String] -> Int
-solve2 xs = length $ nub $ (tails !! 9)
+solve2 xs = length $ nub (tails !! 9)
   where
     dirs = concatMap (unsafeParse parseCommand) xs
     hs = getHeads dirs
     tails = getTails hs
 
-main :: IO()
+main :: IO ()
 main = mainWrapper "day9" solve1 solve2
