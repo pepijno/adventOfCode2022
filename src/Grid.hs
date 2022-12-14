@@ -22,7 +22,7 @@ data Dir8 = N | NE | E | SE | S | SW | W | NW deriving (Show, Eq, Enum, Ord, Bou
 
 dir4, dir8 :: [(Int, Int)]
 dir4 = [(0, 1), (1, 0), (0, -1), (-1, 0)]
-dir8 = [(-1, 0), (-1, 1), (0, 1), (1, 1), (1, 0), (1, -1), (0, -1), (-1, -1)]
+dir8 = [(0, 1), (1, 1), (1, 0), (1, -1), (0, -1), (-1, -1), (-1, 0), (-1, 1)]
 
 enumerate :: forall a . (Bounded a, Enum a) => [a]
 enumerate = [minBound..]
