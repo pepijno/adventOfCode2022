@@ -60,3 +60,6 @@ rotate90CounterClockwise (a, b) = ((-1) * b, a)
 
 touching :: Coord -> Coord -> Bool
 touching (a, b) (x, y) = abs (a - x) <= 1 && abs (b - y) <= 1
+
+manhattan :: Coord -> Coord -> Int
+manhattan (a, b) (c, d) = abs (a - c) + abs (b - d)

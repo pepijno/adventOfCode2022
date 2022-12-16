@@ -6,29 +6,39 @@ CPU time:   0.00s
 CPU time:   0.00s
 day11:
 108240
-CPU time:   0.05s
+CPU time:   0.04s
 25712998901
-CPU time:   1.84s
+CPU time:   1.55s
 day12:
 350
-CPU time:   0.12s
+CPU time:   0.24s
 349
-CPU time:   0.11s
+CPU time:   0.14s
 day13:
 5905
-CPU time:   0.04s
+CPU time:   0.07s
 21691
-CPU time:   0.08s
+CPU time:   0.04s
 day14:
 674
-CPU time:   0.12s
+CPU time:   0.34s
 24958
-CPU time:   1.24s
+CPU time:   1.15s
+day15:
+5073496
+CPU time:   1.49s
+13081194638237
+CPU time:   3.13s
+day16:
+1789
+CPU time:  15.73s
+2496
+CPU time:  11.10s
 day1:
 69883
-CPU time:   0.04s
+CPU time:   0.10s
 207576
-CPU time:   0.02s
+CPU time:   0.01s
 day2:
 13009
 CPU time:   0.00s
@@ -41,14 +51,14 @@ CPU time:   0.01s
 CPU time:   0.00s
 day4:
 503
-CPU time:   0.12s
+CPU time:   0.04s
 827
-CPU time:   0.01s
+CPU time:   0.02s
 day5:
 "WSFTMRHPP"
-CPU time:   0.10s
+CPU time:   0.07s
 "GSLCMFBRP"
-CPU time:   0.08s
+CPU time:   0.01s
 day6:
 1300
 CPU time:   0.00s
@@ -56,16 +66,16 @@ CPU time:   0.00s
 CPU time:   0.01s
 day7:
 1642503
-CPU time:   0.26s
+CPU time:   0.18s
 6999588
-CPU time:   0.09s
+CPU time:   0.08s
 day8:
 1805
-CPU time:   0.28s
+CPU time:   0.13s
 444528
-CPU time:   0.21s
+CPU time:   0.05s
 day9:
 6037
-CPU time:   0.24s
+CPU time:   0.23s
 2485
 CPU time:   0.05s

@@ -33,6 +33,7 @@ library
   hs-source-dirs:
       src
   default-extensions:
+      NumericUnderscores
       TypeApplications
       LambdaCase
       FlexibleContexts
@@ -60,6 +61,7 @@ executable day1
   hs-source-dirs:
       app
   default-extensions:
+      NumericUnderscores
       TypeApplications
       LambdaCase
       FlexibleContexts
@@ -89,6 +91,7 @@ executable day10
   hs-source-dirs:
       app
   default-extensions:
+      NumericUnderscores
       TypeApplications
       LambdaCase
       FlexibleContexts
@@ -118,6 +121,7 @@ executable day11
   hs-source-dirs:
       app
   default-extensions:
+      NumericUnderscores
       TypeApplications
       LambdaCase
       FlexibleContexts
@@ -147,6 +151,7 @@ executable day12
   hs-source-dirs:
       app
   default-extensions:
+      NumericUnderscores
       TypeApplications
       LambdaCase
       FlexibleContexts
@@ -176,6 +181,7 @@ executable day13
   hs-source-dirs:
       app
   default-extensions:
+      NumericUnderscores
       TypeApplications
       LambdaCase
       FlexibleContexts
@@ -205,6 +211,67 @@ executable day14
   hs-source-dirs:
       app
   default-extensions:
+      NumericUnderscores
+      TypeApplications
+      LambdaCase
+      FlexibleContexts
+      TupleSections
+  ghc-options: -O2 -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      adjunctions
+    , adventOfCode2022
+    , array
+    , base >=4.7 && <5
+    , comonad
+    , containers
+    , distributive
+    , extra
+    , hashable
+    , mtl
+    , multiset
+    , parsec
+    , pqueue
+    , split
+    , timeit
+    , vector
+  default-language: Haskell2010
+
+executable day15
+  main-is: Day15.hs
+  hs-source-dirs:
+      app
+  default-extensions:
+      NumericUnderscores
+      TypeApplications
+      LambdaCase
+      FlexibleContexts
+      TupleSections
+  ghc-options: -O2 -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      adjunctions
+    , adventOfCode2022
+    , array
+    , base >=4.7 && <5
+    , comonad
+    , containers
+    , distributive
+    , extra
+    , hashable
+    , mtl
+    , multiset
+    , parsec
+    , pqueue
+    , split
+    , timeit
+    , vector
+  default-language: Haskell2010
+
+executable day16
+  main-is: Day16.hs
+  hs-source-dirs:
+      app
+  default-extensions:
+      NumericUnderscores
       TypeApplications
       LambdaCase
       FlexibleContexts
@@ -234,6 +301,7 @@ executable day2
   hs-source-dirs:
       app
   default-extensions:
+      NumericUnderscores
       TypeApplications
       LambdaCase
       FlexibleContexts
@@ -263,6 +331,7 @@ executable day3
   hs-source-dirs:
       app
   default-extensions:
+      NumericUnderscores
       TypeApplications
       LambdaCase
       FlexibleContexts
@@ -292,6 +361,7 @@ executable day4
   hs-source-dirs:
       app
   default-extensions:
+      NumericUnderscores
       TypeApplications
       LambdaCase
       FlexibleContexts
@@ -321,6 +391,7 @@ executable day5
   hs-source-dirs:
       app
   default-extensions:
+      NumericUnderscores
       TypeApplications
       LambdaCase
       FlexibleContexts
@@ -350,6 +421,7 @@ executable day6
   hs-source-dirs:
       app
   default-extensions:
+      NumericUnderscores
       TypeApplications
       LambdaCase
       FlexibleContexts
@@ -379,6 +451,7 @@ executable day7
   hs-source-dirs:
       app
   default-extensions:
+      NumericUnderscores
       TypeApplications
       LambdaCase
       FlexibleContexts
@@ -408,6 +481,7 @@ executable day8
   hs-source-dirs:
       app
   default-extensions:
+      NumericUnderscores
       TypeApplications
       LambdaCase
       FlexibleContexts
@@ -437,6 +511,7 @@ executable day9
   hs-source-dirs:
       app
   default-extensions:
+      NumericUnderscores
       TypeApplications
       LambdaCase
       FlexibleContexts
@@ -467,6 +542,7 @@ test-suite adventOfCode2022-test
   hs-source-dirs:
       test
   default-extensions:
+      NumericUnderscores
       TypeApplications
       LambdaCase
       FlexibleContexts
