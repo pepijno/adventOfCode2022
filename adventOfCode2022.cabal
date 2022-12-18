@@ -53,6 +53,7 @@ library
     , pqueue
     , split
     , timeit
+    , unordered-containers
     , vector
   default-language: Haskell2010
 
@@ -83,6 +84,7 @@ executable day1
     , pqueue
     , split
     , timeit
+    , unordered-containers
     , vector
   default-language: Haskell2010
 
@@ -113,6 +115,7 @@ executable day10
     , pqueue
     , split
     , timeit
+    , unordered-containers
     , vector
   default-language: Haskell2010
 
@@ -143,6 +146,7 @@ executable day11
     , pqueue
     , split
     , timeit
+    , unordered-containers
     , vector
   default-language: Haskell2010
 
@@ -173,6 +177,7 @@ executable day12
     , pqueue
     , split
     , timeit
+    , unordered-containers
     , vector
   default-language: Haskell2010
 
@@ -203,6 +208,7 @@ executable day13
     , pqueue
     , split
     , timeit
+    , unordered-containers
     , vector
   default-language: Haskell2010
 
@@ -233,6 +239,7 @@ executable day14
     , pqueue
     , split
     , timeit
+    , unordered-containers
     , vector
   default-language: Haskell2010
 
@@ -263,6 +270,7 @@ executable day15
     , pqueue
     , split
     , timeit
+    , unordered-containers
     , vector
   default-language: Haskell2010
 
@@ -293,6 +301,69 @@ executable day16
     , pqueue
     , split
     , timeit
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+executable day17
+  main-is: Day17.hs
+  hs-source-dirs:
+      app
+  default-extensions:
+      NumericUnderscores
+      TypeApplications
+      LambdaCase
+      FlexibleContexts
+      TupleSections
+  ghc-options: -O2 -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      adjunctions
+    , adventOfCode2022
+    , array
+    , base >=4.7 && <5
+    , comonad
+    , containers
+    , distributive
+    , extra
+    , hashable
+    , mtl
+    , multiset
+    , parsec
+    , pqueue
+    , split
+    , timeit
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+executable day18
+  main-is: Day18.hs
+  hs-source-dirs:
+      app
+  default-extensions:
+      NumericUnderscores
+      TypeApplications
+      LambdaCase
+      FlexibleContexts
+      TupleSections
+  ghc-options: -O2 -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      adjunctions
+    , adventOfCode2022
+    , array
+    , base >=4.7 && <5
+    , comonad
+    , containers
+    , distributive
+    , extra
+    , hashable
+    , mtl
+    , multiset
+    , parsec
+    , pqueue
+    , split
+    , timeit
+    , unordered-containers
     , vector
   default-language: Haskell2010
 
@@ -323,6 +394,7 @@ executable day2
     , pqueue
     , split
     , timeit
+    , unordered-containers
     , vector
   default-language: Haskell2010
 
@@ -353,6 +425,7 @@ executable day3
     , pqueue
     , split
     , timeit
+    , unordered-containers
     , vector
   default-language: Haskell2010
 
@@ -383,6 +456,7 @@ executable day4
     , pqueue
     , split
     , timeit
+    , unordered-containers
     , vector
   default-language: Haskell2010
 
@@ -413,6 +487,7 @@ executable day5
     , pqueue
     , split
     , timeit
+    , unordered-containers
     , vector
   default-language: Haskell2010
 
@@ -443,6 +518,7 @@ executable day6
     , pqueue
     , split
     , timeit
+    , unordered-containers
     , vector
   default-language: Haskell2010
 
@@ -473,6 +549,7 @@ executable day7
     , pqueue
     , split
     , timeit
+    , unordered-containers
     , vector
   default-language: Haskell2010
 
@@ -503,6 +580,7 @@ executable day8
     , pqueue
     , split
     , timeit
+    , unordered-containers
     , vector
   default-language: Haskell2010
 
@@ -533,6 +611,7 @@ executable day9
     , pqueue
     , split
     , timeit
+    , unordered-containers
     , vector
   default-language: Haskell2010
 
@@ -564,5 +643,6 @@ test-suite adventOfCode2022-test
     , pqueue
     , split
     , timeit
+    , unordered-containers
     , vector
   default-language: Haskell2010
