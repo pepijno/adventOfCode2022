@@ -1,7 +1,7 @@
 module Main where
 
-import Lib
 import qualified Data.Vector as V
+import Lib
 
 parseInput :: [String] -> [Int]
 parseInput = map read
@@ -16,7 +16,7 @@ unmix i list newList
   | V.null list = newList
   | otherwise = unmix i list' unmixedList
   where
-    Just index = V.findIndex ((==y) . fst) newList
+    Just index = V.findIndex ((== y) . fst) newList
     to = (x + index) `mod` i
     unmixedList = insertAt to p (b V.++ V.tail a)
     (b, a) = V.splitAt index newList
@@ -31,7 +31,7 @@ findSum :: V.Vector (Int, Int) -> Int
 findSum list = sum $ fmap (\x -> snd (list V.! x)) indices
   where
     l = V.length list
-    Just i = V.findIndex ((==0) . snd) list
+    Just i = V.findIndex ((== 0) . snd) list
     indices = map (\x -> (x + i) `mod` l) [1000, 2000, 3000]
 
 solve1 :: [String] -> Int
@@ -42,7 +42,7 @@ solve1 xs = findSum $ unmixMultipleTimes 1 vec vec
 solve2 :: [String] -> Int
 solve2 xs = findSum $ unmixMultipleTimes 10 vec vec
   where
-    vec = V.indexed . V.fromList . map (*811589153) . parseInput $ xs
+    vec = V.indexed . V.fromList . map (* 811589153) . parseInput $ xs
 
-main :: IO()
+main :: IO ()
 main = mainWrapper "day20" solve1 solve2

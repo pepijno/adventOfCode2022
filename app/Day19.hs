@@ -1,31 +1,32 @@
 module Main where
 
-import Lib
-import Parser
 import Data.List
 import qualified Data.Map as M
+import Lib
+import Parser
 
-data Blueprint = Blueprint {
-  blueprintId :: Int,
-  oreRobot :: Int,
-  clayRobot :: Int,
-  obsidianRobot :: (Int, Int),
-  geodeRobot :: (Int, Int)
-} deriving (Show)
+data Blueprint = Blueprint
+  { blueprintId :: Int,
+    oreRobot :: Int,
+    clayRobot :: Int,
+    obsidianRobot :: (Int, Int),
+    geodeRobot :: (Int, Int)
+  }
+  deriving (Show)
 
-
-data Factory = Factory {
-  blueprint :: Blueprint,
-  oreRobots :: Int,
-  clayRobots :: Int,
-  obsidianRobots :: Int,
-  geodeRobots :: Int,
-  ore :: Int,
-  clay :: Int,
-  obsidian :: Int,
-  geode :: Int,
-  target :: String
-} deriving (Show)
+data Factory = Factory
+  { blueprint :: Blueprint,
+    oreRobots :: Int,
+    clayRobots :: Int,
+    obsidianRobots :: Int,
+    geodeRobots :: Int,
+    ore :: Int,
+    clay :: Int,
+    obsidian :: Int,
+    geode :: Int,
+    target :: String
+  }
+  deriving (Show)
 
 parseBlueprint :: Parser Blueprint
 parseBlueprint = do
@@ -44,10 +45,10 @@ parseBlueprint = do
   string " ore and "
   geodeObsidian <- integer
   string " obsidian."
-  return Blueprint { blueprintId = blueprintId, oreRobot = oreRobot, clayRobot = clayRobot, obsidianRobot = (obsidianOre, obsidianClay), geodeRobot = (geodeOre, geodeObsidian) }
+  return Blueprint {blueprintId = blueprintId, oreRobot = oreRobot, clayRobot = clayRobot, obsidianRobot = (obsidianOre, obsidianClay), geodeRobot = (geodeOre, geodeObsidian)}
 
 increment :: Factory -> Factory
-increment factory = factory { ore = ore' + oreRobots factory, clay = clay' + clayRobots factory, obsidian = obsidian' + obsidianRobots factory, geode = geode' + geodeRobots factory }
+increment factory = factory {ore = ore' + oreRobots factory, clay = clay' + clayRobots factory, obsidian = obsidian' + obsidianRobots factory, geode = geode' + geodeRobots factory}
   where
     ore' = ore factory
     clay' = clay factory
@@ -95,13 +96,13 @@ calcBest factory (canMakeOre, canMakeClay, canMakeObsidian) best time
     withOre = [buyOreRobot inc | not canMakeOre && makeOre && oreRobots factory < maximum [geodeRobotOre, obsidianRobotOre, clayRobotOre, oreRobotOre]]
 
 createFactory :: Blueprint -> Factory
-createFactory blueprint = Factory { blueprint = blueprint, oreRobots = 1, clayRobots = 0, obsidianRobots = 0, geodeRobots = 0, ore = 0, clay = 0, obsidian = 0, geode = 0, target = "ore" }
+createFactory blueprint = Factory {blueprint = blueprint, oreRobots = 1, clayRobots = 0, obsidianRobots = 0, geodeRobots = 0, ore = 0, clay = 0, obsidian = 0, geode = 0, target = "ore"}
 
 solve1 :: [String] -> Int
-solve1 = sum . zipWith (*) [1..] . map ((\f -> calcBest f (False, False, False) 0 24) . createFactory . unsafeParse parseBlueprint)
+solve1 = sum . zipWith (*) [1 ..] . map ((\f -> calcBest f (False, False, False) 0 24) . createFactory . unsafeParse parseBlueprint)
 
 solve2 :: [String] -> Int
 solve2 = product . take 3 . map ((\f -> calcBest f (False, False, False) 0 32) . createFactory . unsafeParse parseBlueprint)
 
-main :: IO()
+main :: IO ()
 main = mainWrapper "day19" solve1 solve2
