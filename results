@@ -3,72 +3,77 @@ day10:
 14620
 CPU time:   0.00s
 "###....##.####.###..#..#.###..####.#..#.\n#..#....#.#....#..#.#..#.#..#.#....#..#.\n###.....#.###..#..#.####.#..#.###..#..#.\n#..#....#.#....###..#..#.###..#....#..#.\n#..#.#..#.#....#.#..#..#.#.#..#....#..#.\n###...##..#....#..#.#..#.#..#.#.....##..\n"
-CPU time:   0.08s
+CPU time:   0.00s
 day11:
 108240
-CPU time:   0.09s
+CPU time:   0.02s
 25712998901
-CPU time:   2.02s
+CPU time:   1.89s
 day12:
 350
-CPU time:   0.21s
+CPU time:   0.15s
 349
-CPU time:   0.14s
+CPU time:   0.11s
 day13:
 5905
 CPU time:   0.11s
 21691
-CPU time:   0.03s
+CPU time:   0.05s
 day14:
 674
-CPU time:   0.11s
+CPU time:   0.43s
 24958
-CPU time:   1.37s
+CPU time:   1.24s
 day15:
 5073496
-CPU time:   1.70s
+CPU time:   1.63s
 13081194638237
-CPU time:   4.15s
+CPU time:   6.15s
 day16:
 1789
-CPU time:  19.56s
+CPU time:  20.32s
 2496
-CPU time:  13.08s
+CPU time:  11.63s
 day17:
 3111
-CPU time:   0.04s
+CPU time:   0.02s
 1526744186042
-CPU time:   0.19s
+CPU time:   0.16s
 day18:
 4332
-CPU time:   0.83s
+CPU time:   0.25s
 2524
-CPU time:   1.10s
+CPU time:   1.20s
 day19:
 978
-CPU time:   0.31s
+CPU time:   0.33s
 15939
-CPU time:   0.23s
+CPU time:   0.21s
 day1:
 69883
-CPU time:   0.02s
+CPU time:   0.04s
 207576
-CPU time:   0.05s
+CPU time:   0.01s
 day20:
 9687
-CPU time:   0.46s
+CPU time:   0.49s
 1338310513297
-CPU time:   4.21s
+CPU time:   3.57s
 day21:
 31017034894002
-CPU time:   0.16s
+CPU time:   0.19s
 3555057453229
-CPU time:   0.17s
+CPU time:   0.06s
 day22:
 122082
-CPU time:   3.28s
+CPU time:   3.09s
 134076
-CPU time:   3.04s
+CPU time:   2.97s
+day23:
+3862
+CPU time:   0.56s
+913
+CPU time:  27.20s
 day2:
 13009
 CPU time:   0.00s
@@ -76,36 +81,36 @@ CPU time:   0.00s
 CPU time:   0.00s
 day3:
 8088
-CPU time:   0.02s
+CPU time:   0.09s
 2522
 CPU time:   0.00s
 day4:
 503
-CPU time:   0.08s
+CPU time:   0.04s
 827
 CPU time:   0.03s
 day5:
 "WSFTMRHPP"
-CPU time:   0.05s
+CPU time:   0.03s
 "GSLCMFBRP"
 CPU time:   0.01s
 day6:
 1300
 CPU time:   0.00s
 3986
-CPU time:   0.01s
+CPU time:   0.09s
 day7:
 1642503
 CPU time:   0.11s
 6999588
-CPU time:   0.09s
+CPU time:   0.12s
 day8:
 1805
-CPU time:   0.12s
+CPU time:   0.09s
 444528
-CPU time:   0.06s
+CPU time:   0.07s
 day9:
 6037
-CPU time:   0.26s
+CPU time:   0.56s
 2485
 CPU time:   0.05s
