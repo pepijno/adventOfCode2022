@@ -553,6 +553,37 @@ executable day23
     , vector
   default-language: Haskell2010
 
+executable day24
+  main-is: Day24.hs
+  hs-source-dirs:
+      app
+  default-extensions:
+      NumericUnderscores
+      TypeApplications
+      LambdaCase
+      FlexibleContexts
+      TupleSections
+  ghc-options: -O2 -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      adjunctions
+    , adventOfCode2022
+    , array
+    , base >=4.7 && <5
+    , comonad
+    , containers
+    , distributive
+    , extra
+    , hashable
+    , mtl
+    , multiset
+    , parsec
+    , pqueue
+    , split
+    , timeit
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
 executable day3
   main-is: Day3.hs
   hs-source-dirs:
